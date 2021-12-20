@@ -1,2 +1,2 @@
-'Hikmah' is defined in Arabic as "coming to know the essence of beings as they really are". This repo aims to generalize machine learning and data science implementations for research, development and production and will be built upon multiple libraries. <br/>
+**Hikmah** is defined in Arabic as *'coming to know the essence of beings as they really are'*. This repo aims to generalize common artificial intelligence and data science implementations for research, development and production and will be built upon multiple libraries. <br/>
 Any sort of contribution is welcomed.
