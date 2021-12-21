@@ -16,7 +16,10 @@ def jsonl_to(file_path:str, destination_type:str = "list"):
     if destination_type == "list":
         return dict_list
     
-    if destination_type == "pandas":
+    elif destination_type == "pandas":
         keys = list(dict_list[0].keys())
         df = pd.DataFrame(data=dict_list,columns=keys)
         return df
+    
+    else:
+        raise Exception("destination_type should be \"list\" or \"pandas\".")
