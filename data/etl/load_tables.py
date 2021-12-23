@@ -7,7 +7,7 @@ def jsonl_to(file_path:str, destination_type:str = "list"):
         file_path: jsonl file path as string
         destination_type : type of object intended to return
     Returns:
-        dict_list or pandas dataframe
+        dictionary list or pandas dataframe
     '''
     with open(file_path, 'r') as fp:
         json_list = list(fp)
