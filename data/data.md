@@ -1,4 +1,4 @@
-# Using the functions in the data folder
+# Using the functions in the data module
 ## hikmah.data.etl
 ### load_tables
 
