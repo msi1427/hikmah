@@ -29,6 +29,10 @@ Any sort of contribution is welcomed.
    import hikmah
    ```
 
+   ```python
+   from hikmah.data import <module_name>
+   ```
+
    *Use data functions* (More on [data.md](https://github.com/msi1427/hikmah/blob/main/data/data.md))
    
    ```python
