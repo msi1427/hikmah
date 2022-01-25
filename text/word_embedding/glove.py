@@ -18,7 +18,7 @@ def download_glove(file_name:str,download_dir:str,unzip=True):
     wget.download(url)
 
     if unzip == True:
-        with ZipFile('path_to_file/file.zip', 'r') as zf:
+        with ZipFile(f"{download_dir}/glove.{file_name}.zip", 'r') as zf:
             zf.extractall(path=f"{download_dir}/glove.{file_name}.zip")
             
     os.chdir(cur_dir)        
