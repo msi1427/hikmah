@@ -76,3 +76,26 @@
    text = processing.keep_only_alphanumeric(text)
    # Returns processed text with only alphanumeric characters
    ```
+
+## hikmah.text.word_embedding
+
+### glove
+
+1. Import the library
+
+   ```python
+   from hikmah.text.word_embedding import glove
+   ```
+
+2. **download_glove(file_name:str,download_dir:str,unzip=True)** 
+
+   ```python
+   glove.download_glove(file_name=<glove file name>,download_dir=<path to download directory>,unzip=<True or False>)
+   ```
+
+   *approved glove file names*
+
+   - `6B` : Wikipedia 2014 + Gigaword 5 (6B tokens, 400K vocab, uncased, 300d vectors, 822 MB) **[[Download Link](https://huggingface.co/stanfordnlp/glove/resolve/main/glove.6B.zip)]**
+   - `42B.300d` : Common Crawl (42B tokens, 1.9M vocab, uncased, 300d vectors, 1.75 GB) **[[Download Link](https://huggingface.co/stanfordnlp/glove/resolve/main/glove.42B.300d.zip)]**
+   - `840B.300d` : Common Crawl (840B tokens, 2.2M vocab, cased, 300d vectors, 2.03 GB) **[[Download Link](https://huggingface.co/stanfordnlp/glove/resolve/main/glove.840B.300d.zip)]**
+   - `twitter.27B` : Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased, 200d vectors, 1.42 GB) **[[Download Link](https://huggingface.co/stanfordnlp/glove/resolve/main/glove.twitter.27B.zip)]**
