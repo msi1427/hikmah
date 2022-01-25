@@ -16,8 +16,10 @@ def download_glove(file_name:str,download_dir:str,unzip=True):
     os.chdir(download_dir)
     url = f"https://huggingface.co/stanfordnlp/glove/resolve/main/glove.{file_name}.zip"
     wget.download(url)
+    print(f"glove.{file_name}.zip downloaded")
 
     if unzip == True:
+        print(f"Unzipping {download_dir}/glove.{file_name}.zip")
         with ZipFile(f"{download_dir}/glove.{file_name}.zip", 'r') as zf:
             zf.extractall(path=download_dir)
             
